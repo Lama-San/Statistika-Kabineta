@@ -1,0 +1,30 @@
+﻿<Window x:Class="Statistika_Kabineta.AddStudent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Statistika_Kabineta"
+        mc:Ignorable="d"
+        Title="AddStudent" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="StudentList" SelectionChanged="StudentList_SelectionChanged"/>
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left">
+
+            <TextBlock Text="ФИО" Height="37" Width="242"/>
+            <TextBox x:Name="FullName" Height="41" Width="242"/>
+
+            <TextBlock Text="Проведенно часов" Height="37" Width="242"/>
+            <TextBox x:Name="Hour" Height="41" Width="242"/>
+
+            <TextBlock Text="Задано вопросов" Height="37" Width="242"/>
+            <TextBox x:Name="Questions" Height="41" Width="242"/>
+
+            <Button Content="Добавить" Height="46" Width="242"/>
+            <Button Content="Редактировать" Height="46" Width="242"/>
+
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>

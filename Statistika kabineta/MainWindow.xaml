@@ -1,0 +1,28 @@
+﻿<Window x:Class="Statistika_Kabineta.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Statistika_Kabineta"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid>
+            <ListBox x:Name="PeopleList" SelectionChanged="PeopleList_SelectionChanged" Margin="0,0,530,10" />
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,337,0">
+                <TextBlock Text="ФИО" FontWeight="Bold" Width="47"/>
+                <TextBlock x:Name="FullNameText" />
+                <TextBlock Text="Количество часов" FontWeight="Bold" Width="127" />
+                <TextBlock x:Name="HoursText" />
+                <TextBlock Text="Вопросы" FontWeight="Bold" Width="96" />
+                <TextBlock x:Name="QuestionText" />
+
+
+
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</Window>
